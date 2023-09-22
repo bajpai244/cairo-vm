@@ -52,7 +52,7 @@ use arbitrary::{Arbitrary, Unstructured};
 // failures.
 // Fields in `Program` (other than `SharedProgramData` itself) are used by the main logic.
 #[derive(Clone, Default, Debug, PartialEq, Eq)]
-pub(crate) struct SharedProgramData {
+pub struct SharedProgramData {
     pub(crate) data: Vec<MaybeRelocatable>,
     pub(crate) hints_collection: HintsCollection,
     pub(crate) main: Option<usize>,
